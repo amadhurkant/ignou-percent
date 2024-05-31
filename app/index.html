@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>IGNOU percentage calclulator</title>
+</head>
+<body>
+    <h1><center>IGNOU Percentage Calclulator</center></h1>
+    <div class = "main" style="display: flex; justify-content: center;">
+        <div id = "frM">
+            <form name = "fquest">
+                <div>
+                    <label for="nAs">Number of Assignment Submitted: </label>
+                    <input type="text" name = "nAsst"> <br>
+                </div>
+
+                <div style="padding-top: 0.2cm;">
+                    <label for="nEs" style="padding-top: 100">Number of Written Examinations: </label>
+                    <input type="text" name = "nExe"> <br>
+                </div>
+
+                <div style="padding-top: 0.2cm;">
+                    <input type="button" value="Proceed" onclick="start()">
+                </div>
+
+                <div id = "entries">
+                    <div id = "entriesA"></div>
+                    <div id = "entriesE"></div>
+                </div>
+
+                <div  style="padding-top: 0.2cm;">
+                    <input type = "button" value="Calculate" onclick="calculate()">
+                </div>
+            </form>
+
+            <div id = "results" style="padding-top: 0.3cm;">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
